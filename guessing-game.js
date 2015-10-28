@@ -53,13 +53,3 @@ if (userGuess3 === guess3) {
   alert(userGuess3 + " is my favorite number. Good guess!");
   console.log(userGuess3 + ', Is the correct answer.');
 };
-
-
-
-
-
-
-
-
-
-
