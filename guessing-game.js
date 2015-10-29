@@ -8,13 +8,16 @@ var ans6 = document.getElementById('answer6');
 
 alert("let's play a game!");
 
+var score;
+var tries;
+
 function firstQuestion() {
 
 var userGuess = prompt('Is Albanian my first language?').toLowerCase();
  score = 0;
 
   if (userGuess === 'yes'|| userGuess ==='y') {
-    ans.innerHTML = ('Albanian is my first language. Good guess!');
+    ans1.innerHTML = ('Albanian is my first language. Good guess!');
     console.log(userGuess + ', is the right answer');
     score +=1
   }
@@ -84,13 +87,17 @@ var userGuess5 = prompt('Am I the oldest child in my family?').toLowerCase();
   }
 }
 
-alert('all done!! your final score is ' + score + ' out of 5');
+firstQuestion();
+secondQuestion();
+thirdQuestion();
+fourthQuestion();
+fifthQuestion();
 
 function sixthQuestion() {
 
 var userGuess6 = parseInt(prompt("Now lets make it a little harder. Guess my favorite number between 1-10 What's your guess?"));
 
-var tries = 1;
+  tries = 1;
 
   if (userGuess6 === 7) {
     ans6.innerHTML = ('You got it on your first try');
@@ -107,21 +114,15 @@ var tries = 1;
           console.log(userGuess6 + ', is the wrong answer');
           tries +=1
       }
-
+      ans6.innerHTML = ('You guessed my number in ' + tries + ' tries congrats!');
     }
+  }
+console.log(userGuess6 + ', Is the correct answer.');
 }
 
-firstQuestion();
-secondQuestion();
-thirdQuestion();
-fourthQuestion();
-fifthQuestion();
+alert('all done!! your final score is ' + score + ' out of 5');
 sixthQuestion();
-
-alert('You guessed my number in ' + tries + ' tries congrats!');
-alert(userGuess6 + " is my favorite number. Good guess!");
-console.log(userGuess6 + ', Is the correct answer.');
-};
-
 alert('Time for a laugh.... What did the fish say when he hit a concrete wall?');
 alert('Dam!')
+
+
