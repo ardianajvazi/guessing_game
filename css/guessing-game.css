@@ -51,3 +51,13 @@ ul li a{
 }
   #content,
 ul li a{ box-shadow: 0px 1px 1px #999; }
+
+.red {
+
+  background-color: #FF0000;
+  color: white;
+}
+
+.green {
+  background-color: green;
+}
