@@ -85,13 +85,9 @@ var userGuess5 = prompt('Am I the oldest child in my family?').toLowerCase();
     ans5.innerHTML = ('Wrong, Im the oldest one');
     console.log(userGuess5 + ', is the wrong answer');
   }
+  alert('all done!! your final score is ' + score + ' out of 5');
 }
 
-firstQuestion();
-secondQuestion();
-thirdQuestion();
-fourthQuestion();
-fifthQuestion();
 
 function sixthQuestion() {
 
@@ -120,8 +116,13 @@ var userGuess6 = parseInt(prompt("Now lets make it a little harder. Guess my fav
 console.log(userGuess6 + ', Is the correct answer.');
 }
 
-alert('all done!! your final score is ' + score + ' out of 5');
+firstQuestion();
+secondQuestion();
+thirdQuestion();
+fourthQuestion();
+fifthQuestion();
 sixthQuestion();
+
 alert('Time for a laugh.... What did the fish say when he hit a concrete wall?');
 alert('Dam!')
 
