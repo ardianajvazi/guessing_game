@@ -17,7 +17,7 @@ var userGuess = prompt('Is Albanian my first language?').toLowerCase();
  score = 0;
 
   if (userGuess === 'yes'|| userGuess ==='y') {
-    ans1.innerHTML = ('Albanian is my first language. Good guess!');
+    ans1.innerHTML = 'Albanian is my first language. Good guess!' + '<br> <img width = "200px" src = "img/albanian_flag.png">';
     console.log(userGuess + ', is the right answer');
     score +=1
   }
@@ -32,7 +32,7 @@ function secondQuestion() {
 var userGuess2 = prompt('Do I have any pets?').toLowerCase();
 
   if (userGuess2 === 'no'|| userGuess2 ==='n') {
-    ans2.innerHTML = ('Correct! I dont have any pets.');
+    ans2.innerHTML = 'Correct! I dont have any pets.' + '<br> <img width = "200px" src = "img/no_pets.jpg">';
     console.log(userGuess2  + ', is the right answer');
     score +=1
   }
@@ -47,7 +47,7 @@ function thirdQuestion() {
 var userGuess3 = prompt('Is soccer my favorite sport?').toLowerCase();
 
   if (userGuess3 === 'yes'|| userGuess3 ==='y') {
-    ans3.innerHTML = ('Good guess!');
+    ans3.innerHTML = 'Good guess!' + '<br> <img width = "200px" src = "img/soccerball.jpg">';
     console.log(userGuess3 + ', is the right answer');
     score +=1
   }
@@ -62,7 +62,7 @@ function fourthQuestion() {
 var userGuess4 = parseInt(prompt('How many sisters do I have?'));
 
   if (userGuess4 === 2) {
-    ans4.innerHTML = ('Good guess!');
+    ans4.innerHTML = 'Good guess!' + '<br> <img width = "200px" src = "img/number_2.png">';
     console.log(userGuess4 + ', is the right answer');
     score +=1
   }
@@ -77,7 +77,7 @@ function fifthQuestion() {
 var userGuess5 = prompt('Am I the oldest child in my family?').toLowerCase();
 
   if (userGuess5 === "yes" || userGuess5 ==='y') {
-    ans5.innerHTML = ("Good guess! I'm the oldest!");
+    ans5.innerHTML = "Good guess! I'm the oldest!" + '<br> <img width = "200px" src = "img/yes.jpg">';
     console.log(userGuess5 + ', is the right answer');
     score +=1
   }
@@ -96,7 +96,7 @@ var userGuess6 = parseInt(prompt("Now lets make it a little harder. Guess my fav
   tries = 1;
 
   if (userGuess6 === 7) {
-    ans6.innerHTML = ('You got it on your first try');
+    ans6.innerHTML = 'You got it on your first try' + '<br> <img width = "200px" src = "img/number-7.jpg">';
     console.log(userGuess6 + ', is the correct answer');
   } else {
 
