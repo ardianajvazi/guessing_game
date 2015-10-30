@@ -122,7 +122,7 @@ var userGuess6 = parseInt(prompt("Now lets make it a little harder. Guess my fav
           tries +=1
       }
     }
-    ans6.innerHTML = ('You guessed my number in ' + tries + ' tries congrats!');
+    ans6.innerHTML = 'You guessed my number in ' + tries + ' tries congrats!' + '<br> <img width = "200px" src = "img/number-7.jpg">';;
     ans6.className = "green";
   }
 console.log(userGuess6 + ', Is the correct answer.');
